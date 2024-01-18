@@ -32,7 +32,7 @@ class ProfileView extends StatelessWidget {
         ),
       ),
       body: const Center(
-        child: Text('Vamo a ver'),
+        child: Text('just checkin'),
       ),
     );
   }

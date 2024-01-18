@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 // import 'package:google_fonts/google_fonts.dart';
 import 'package:feh_bloc_tab/ui/routes/route_generator.dart';
-
 import 'package:feh_bloc_tab/business_logic/business_logic_imports.dart';
 
 void main() {
@@ -27,7 +26,8 @@ class MyApp extends StatelessWidget {
             builder: (context, child) {
               return MediaQuery(
                 data: MediaQuery.of(context).copyWith(
-                  textScaleFactor: 1.0,
+                  // textScaleFactor: 1.0,
+                  textScaler: const TextScaler.linear(1.0),
                 ),
                 child: child!,
               );
