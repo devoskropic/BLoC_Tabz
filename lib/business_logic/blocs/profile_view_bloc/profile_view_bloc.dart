@@ -6,6 +6,11 @@ part 'profile_view_state.dart';
 
 class ProfileViewBloc extends Bloc<ProfileViewEvent, ProfileViewState> {
   ProfileViewBloc() : super(ProfileInitial()) {
-    on<ChangeDataEvent>((event, emit) {});
+    // on<ChangeDataEvent>((event, emit) {});
+    on<ChangeDataEvent>((_onChangeDataEvent));
+  }
+
+  _onChangeDataEvent(event, emit) {
+    // Code to start saving changed info in the database
   }
 }
